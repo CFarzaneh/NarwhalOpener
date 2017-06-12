@@ -1,0 +1,9 @@
+Package: com.cfarzaneh.narwhalopener
+Name: NarwhalOpener
+Depends: mobilesubstrate, ws.hbang.libopener (>= 3.0)
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Opens reddit links in Narwhal app
+Maintainer: CFarzaneh
+Author: CFarzaneh
+Section: Addons
