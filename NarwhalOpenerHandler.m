@@ -15,7 +15,7 @@
 
 - (id)openURL:(NSURL *)url sender:(NSString *)sender {
 
-	if ([url.host isEqualToString:@"reddit.ws"] || [url.host hasSuffix:@".reddit.com"]) {
+	if ([url.host isEqualToString:@"reddit.ws"] || [url.host hasSuffix:@".reddit.com"] || [url.pathComponents containsObject:@"amp.reddit.com"]) {
 		return [NSURL URLWithString:[NSString stringWithFormat:@"narwhal://open-url/%@", url]];
 	}
 	return nil;
